@@ -13,36 +13,37 @@
     <body>
         <div class="container">
             <h1>Tic Tac Toe Game</h1>
+            <p id="message"></p>
             <div id="board">
                 <table class="table">
                     <tr class="row1">
-                        <td class="h">1</td>
-                        <td class="middle h">1</td>
-                        <td class="h">1</td>
+                        <td class="h first" data-tile="1" data-player=""></td>
+                        <td class="middle h" data-tile="2" data-player=""></td>
+                        <td class="h" data-tile="3" data-player=""></td>
                     </tr>
 
                     <tr class="row2">
-                        <td class="h">1</td>
-                        <td class="middle h">1</td>
-                        <td class="h">1</td>
+                        <td class="h" data-tile="4" data-player=""></td>
+                        <td class="middle h" data-tile="5" data-player=""></td>
+                        <td class="h" data-tile="6" data-player=""></td>
                     </tr>
 
                     <tr class="row3">
-                        <td>1</td>
-                        <td class="middle">1</td>
-                        <td>1</td>
+                        <td data-tile="7" data-player=""></td>
+                        <td class="middle" data-tile="8" data-player=""></td>
+                        <td data-tile="9" data-player=""></td>
                     </tr>
                 </table>
             </div>
             <footer>
-                <p>Created by Chiamaka</p>
+                <p>Created by <a href="https://github.com/Chiamaka">Chiamaka</a></p>
             </footer>
         </div>
         
         
-
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <!--build:js js/main.min.js-->
-        <script src="resources/js/index.js"></script>
+        <script src="resources/js/index2.js"></script>
         <!--endbuild-->
     </body>
 </html>

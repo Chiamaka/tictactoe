@@ -60,10 +60,11 @@ gulp.task('fonts', function() {
 });
 
 /* Clean up task */
-gulp.task('clean-dist', function() {
+gulp.task('clean', function() {
     return del.sync('dist');
 });
 
+gulp.task('build', ['clean', 'fonts', 'images', 'useref']);
 
 /* Gulp watch file - watches for changes to any file */
 gulp.task('watch', ['browserSync', 'sass'], function() {
