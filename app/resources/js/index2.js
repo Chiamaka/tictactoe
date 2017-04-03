@@ -151,7 +151,7 @@ $(document).ready(function() {
         if (checkIfFree($(this).data('tile'))) {
             humanPlay($(this));
             checkWinner();
-            computerPlay();
+            setTimeout(computerPlay, 500);
         } else {
             alert('Sorry dude, that square is already taken');
         }
